@@ -3,7 +3,7 @@
 $username = 'root';
 $password = ''; 
 
-$db = new mysqli('localhost', $username, $password, 'jour');
+$db = new mysqli('localhost', $username, $password, 'jour8');
 
 $request = $db->prepare("SELECT * FROM etudiant");
 $request->execute();
