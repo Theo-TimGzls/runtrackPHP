@@ -5,7 +5,7 @@ $password = '';
 
 $db = new mysqli('localhost', $username, $password, 'jour8');
 
-$request = $db->prepare("SELECT COUNT(*) AS nb_etudiants FROM etudiant");
+$request = $db->prepare("SELECT COUNT(id) AS nb_etudiants FROM etudiant");
 $request->execute();
 $query = $request->get_result();
 $row = $query->fetch_assoc();
